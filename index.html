@@ -346,12 +346,11 @@
                     </li>
                 </ul>
             </div>
-            <form action="" class="footer-form">
+            <form  class="footer-form">
+                <p class="footer-form-mail-label" >Subscribe</p>
+
                 <div class="form-group">
-                    <label class="footer-form-mail-label" for="footer-mail">Subscribe</label>
-                    <input id="footer-mail"class="footer-form-mail-input" type="email" placeholder="E-mail">
-                </div>
-             
+                    <input id="footer-mail" class="footer-form-mail-input" type="email" placeholder="E-mail">
                     <button type="submit"  class="footer-form-submit">
                         <span class="footer-form-submit-text">Subscribe</span>
 
@@ -359,6 +358,9 @@
                             <use href="images/symbol-defs.svg#icon-send"></use>
                         </svg>
                     </button>
+                </div>
+             
+                    
                 </form>
             
         </div>
@@ -371,43 +373,50 @@
                 </svg>
             </button>
             <div class="form-container">
-                <h2 class="pop-up-heading">Leave your contacts and we will call you back</h2>
+                <b class="pop-up-heading">Leave your contacts and we will call you back</b>
 
-                <form action="" class="pop-up-form">
+                <form class="pop-up-form">
                     <label>
                         <span class="pop-up-form-span">Name</span>
-                        <input type="text" class="pop-up-form-input">
-                        <svg class="pop-up-form-input-icon">
-                            <use href="./images/symbol-defs.svg#icon-name-input"></use>
-                        </svg>
+                        <span class="pop-up-form-input-container">
+                            <input type="text" name="pop-up-name" class="pop-up-form-input">
+                            <svg class="pop-up-form-input-icon">
+                                <use href="./images/symbol-defs.svg#icon-name-input"></use>
+                            </svg>
+                        </span>
+                        
                     </label>
                     <label>
+
                         <span class="pop-up-form-span">Phone</span>
-                        <input type="tel" class="pop-up-form-input">
-                        <svg class="pop-up-form-input-icon">
-                            <use href="./images/symbol-defs.svg#icon-phone-input"></use>
-                        </svg>
+                        <span class="pop-up-form-input-container">
+                            <input type="tel" name="pop-up-tel" class="pop-up-form-input">
+                            <svg class="pop-up-form-input-icon">
+                                <use href="./images/symbol-defs.svg#icon-phone-input"></use>
+                            </svg>
+                        </span>
+                        
                     </label>
                     <label>
                         <span class="pop-up-form-span">Email</span>
-                        <input type="email" class="pop-up-form-input">
-                        <svg class="pop-up-form-input-icon">
-                            <use href="./images/symbol-defs.svg#icon-mail-input"></use>
-                        </svg>
+                        <span class="pop-up-form-input-container">
+                            <input type="email" name="pop-up-mail" class="pop-up-form-input">
+                            <svg class="pop-up-form-input-icon">
+                                <use href="./images/symbol-defs.svg#icon-mail-input"></use>
+                            </svg>
+                        </span>
                     </label>
                     <label class="pop-up-textarea-label">
                         <span class="pop-up-form-span">Comment</span>
-                        <textarea class=" pop-up-form-input pop-up-form-textarea" placeholder="Text input" ></textarea>
+                        <textarea name="pop-up-comment" class="pop-up-form-input pop-up-form-textarea" placeholder="Text input" ></textarea>
                     </label>
 
                     <label class="pop-up-form-checkbox-label">
-                        <input type="checkbox" class="pop-up-form-checkbox">
-                        <span class="pop-up-check-text">I accept the terms and conditions of the  <a> Privacy Policy</a></span>
+                        <input type="checkbox" class="pop-up-form-checkbox visuallyhidden">
+                        <span class="pop-up-check-text">I accept the terms and conditions of the  <a href="#"> Privacy Policy</a></span>
                     </label>
                     
-                    <label class="pop-up-submit-label">
-                        <input class="pop-up-form-submit" type="submit" value="Send">
-                    </label>
+                    <button class="pop-up-form-submit" type="submit" >Send</button>
 
                     
                 </form>
